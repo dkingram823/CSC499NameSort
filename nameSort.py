@@ -1,4 +1,6 @@
-
+# Daniel Ingram
+# 3/18/2020
+# CSC 499
 
 def lensort(x):
     for i in range(1, len(x)):
