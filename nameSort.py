@@ -42,8 +42,15 @@ if __name__== "__main__":
 
     wordlist = lensort(wordlist)
 
-    
-
+    lastLen = 0
+    lastInd = 0
+    for n in range(len(wordlist)):
+        if wordlist[n].__len__() > lastLen:
+            alphSort(lastInd,n,wordlist)
+            lastInd = n
+            lastLen = wordlist[n].__len__()
 
     print('')
-    print(wordlist)
+
+    for n in wordlist:
+        print(n)
